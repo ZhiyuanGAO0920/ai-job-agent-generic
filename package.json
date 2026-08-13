@@ -1,0 +1,22 @@
+{
+  "name": "ai-job-agent-generic",
+  "version": "1.0.0",
+  "description": "零依赖、画像驱动的通用 AI 求职评估工作台：四维加权评分 / 简历定制 / 批量排序 / 模拟面试 / ATS 校验 / 投递档案",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "node server/selfcheck.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai",
+    "job-search",
+    "resume",
+    "ats",
+    "zero-dependency",
+    "llm"
+  ],
+  "license": "MIT"
+}

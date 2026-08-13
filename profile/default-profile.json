@@ -1,0 +1,22 @@
+{
+  "_comment": "通用版默认画像模板。首次启动向导会加载此文件作为初始值，用户填完后存到浏览器 localStorage。你也可以直接编辑本文件作为团队/组织级默认画像（GET /api/profile 返回的就是它）。所有字段均可留空，但建议至少填 resume 与 careerGoal 后再做真实评分。",
+  "name": "",
+  "city": "",
+  "education": "",
+  "contact": "",
+  "targetRoles": "",
+  "industries": "",
+  "resume": "",
+  "knowledge": [
+    { "id": "k1", "title": "核心工作经历 / 项目 1", "content": "" },
+    { "id": "k2", "title": "核心工作经历 / 项目 2", "content": "" }
+  ],
+  "hardPrefs": "",
+  "redLines": "",
+  "narrative": "",
+  "scoring": {
+    "weights": { "skill": 0.35, "experience": 0.30, "industry": 0.15, "growth": 0.10 },
+    "threshold": 4.0
+  },
+  "functionPreset": "通用"
+}

@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  selfcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # 零依赖：无需 npm install，直接跑语法检查 + 回归自检
+      - run: node --check server/server.js
+      - run: node --check server/selfcheck.js
+      - run: node --check web/app.js
+      - run: node server/selfcheck.js

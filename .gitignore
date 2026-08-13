@@ -1,0 +1,12 @@
+# 密钥：绝不入库
+server/.env
+.env
+
+# 依赖（本项目零依赖，留空即可）
+node_modules/
+
+# 服务端档案持久化（含个人投递数据，绝不入库）
+data/
+
+# Playwright MCP 会话调试产物（DOM 快照/控制台日志，非项目文件）
+.playwright-mcp/
